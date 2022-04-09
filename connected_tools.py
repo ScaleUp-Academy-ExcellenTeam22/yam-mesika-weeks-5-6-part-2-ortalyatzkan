@@ -10,7 +10,7 @@ def interleave(*iterables):
     """
     return list(functools.reduce(lambda x, y: x + y, [iterable for iterable in itertools.zip_longest(*iterables)]))
 
-def interleave_generator(*iterables):
+def interleave_generator(*iterables)->list:
     """
      A function that connects lists in the order of the values.
     :param iterables:A Tuple of list to merge.
