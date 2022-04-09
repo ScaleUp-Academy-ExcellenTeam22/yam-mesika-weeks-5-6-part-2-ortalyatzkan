@@ -1,8 +1,8 @@
-def dividers_equal_to_sum_generator(start=2):
+def dividers_equal_to_sum_generator(start=2)->int:
     """
     A function of a generator that calculates the numbers whose sum of divisors is equal to the number itself.
     :param start:The number from which The generator function starts calculating.
-    :return:
+    :return:Perfect number for division.
     """
     while True:
         sum_dividers = sum([num for num in range(1, start) if start % num == 0])
